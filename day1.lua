@@ -12,7 +12,7 @@ end
 
 steps = ( (lpeg.S('LR') / string.lower * num) / step * lpeg.S(',')^0 * spc)^1
 
-path = { steps:match(io.open('day1part1.txt'):read()) }
+path = { steps:match(io.open('day1.txt'):read()) }
 
 function walk(path)
     local dir = 'n'
